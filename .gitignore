@@ -12,7 +12,6 @@ __MACOSX/
 # Runtime outputs and checkpoints
 DICE/runs/
 runs/
-output/
 ckpt/
 *.pth
 *.pt

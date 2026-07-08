@@ -1,0 +1,20 @@
+{
+  "name": "ml10m_head_test",
+  "mode": "direct",
+  "test_frac": 0.2,
+  "skew_frac": 0.2,
+  "cap_percentile": 90.0,
+  "seed": 2126,
+  "n_user": 37962,
+  "n_item": 4819,
+  "records": {
+    "full": 1371473,
+    "train": 788456,
+    "train_skew": 200035,
+    "val": 109200,
+    "test": 273782
+  },
+  "test_mean_item_popularity": 4238.0146484375,
+  "train_mean_item_popularity": 1641.7664794921875,
+  "skew_mean_item_popularity": 3272.0048828125
+}

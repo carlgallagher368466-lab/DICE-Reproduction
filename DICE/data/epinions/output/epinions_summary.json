@@ -1,0 +1,12 @@
+{
+  "dataset": "epinions",
+  "n_user": 18172,
+  "n_item": 22582,
+  "n_interactions": 356145,
+  "n_social_edges": 253470,
+  "n_train": 201867,
+  "n_train_skew": 51617,
+  "n_val": 31604,
+  "n_test": 71057,
+  "min_rating": 4.0
+}
