@@ -1,0 +1,62 @@
+[
+  {
+    "Model": "MF",
+    "BestEpoch": 11,
+    "recall@20": 0.01662584595364053,
+    "ndcg@20": 0.010016480455287056,
+    "hit_ratio@20": 0.05926700418225842,
+    "recall@50": 0.03173684856550405,
+    "ndcg@50": 0.014258066855466933,
+    "hit_ratio@50": 0.10598723310587717,
+    "RunDir": "five-star-epinions-MF_2026-06-22-13-34-41",
+    "MetricSource": "/root/autodl-tmp/DICE_five_star/runs/epinions_second_dataset/output/five-star-epinions-MF_2026-06-22-13-34-41/test_log/five-star-epinions-MF.log.INFO"
+  },
+  {
+    "Model": "DICE",
+    "BestEpoch": 29,
+    "recall@20": 0.02827932908805964,
+    "ndcg@20": 0.017184962594819914,
+    "hit_ratio@20": 0.09030376403257759,
+    "recall@50": 0.04974191180067328,
+    "ndcg@50": 0.02307426166950636,
+    "hit_ratio@50": 0.14593880695575612,
+    "RunDir": "five-star-epinions-DICE_2026-06-22-14-00-11",
+    "MetricSource": "/root/autodl-tmp/DICE_five_star/runs/epinions_second_dataset/output/five-star-epinions-DICE_2026-06-22-14-00-11/test_log/five-star-epinions-DICE.log.INFO"
+  },
+  {
+    "Model": "IDICE-no-social",
+    "BestEpoch": 29,
+    "recall@20": 0.02885451478768825,
+    "ndcg@20": 0.01802440225576436,
+    "hit_ratio@20": 0.09278010125467753,
+    "recall@50": 0.05128598128933597,
+    "ndcg@50": 0.024206604335979476,
+    "hit_ratio@50": 0.1524323134492626,
+    "RunDir": "five-star-epinions-IDICE-no-social_2026-06-22-14-33-14",
+    "MetricSource": "/root/autodl-tmp/DICE_five_star/runs/epinions_second_dataset/output/five-star-epinions-IDICE-no-social_2026-06-22-14-33-14/test_log/five-star-epinions-IDICE-no-social.log.INFO"
+  },
+  {
+    "Model": "IDICE",
+    "BestEpoch": 29,
+    "recall@20": 0.02801385966752845,
+    "ndcg@20": 0.0179030251387795,
+    "hit_ratio@20": 0.09261501210653753,
+    "recall@50": 0.04951193747969332,
+    "ndcg@50": 0.023821276146097484,
+    "hit_ratio@50": 0.1505062733876293,
+    "RunDir": "five-star-epinions-IDICE_2026-06-22-15-07-50",
+    "MetricSource": "/root/autodl-tmp/DICE_five_star/runs/epinions_second_dataset/output/five-star-epinions-IDICE_2026-06-22-15-07-50/test_log/five-star-epinions-IDICE.log.INFO"
+  },
+  {
+    "Model": "IDICE-high-social",
+    "BestEpoch": 29,
+    "recall@20": 0.029101176134692385,
+    "ndcg@20": 0.01782532050038904,
+    "hit_ratio@20": 0.09316530926700418,
+    "recall@50": 0.051415435437177595,
+    "ndcg@50": 0.02403779755711595,
+    "hit_ratio@50": 0.15391811578252257,
+    "RunDir": "five-star-epinions-IDICE-high-social_2026-06-22-15-42-21",
+    "MetricSource": "/root/autodl-tmp/DICE_five_star/runs/epinions_second_dataset/output/five-star-epinions-IDICE-high-social_2026-06-22-15-42-21/test_log/five-star-epinions-IDICE-high-social.log.INFO"
+  }
+]

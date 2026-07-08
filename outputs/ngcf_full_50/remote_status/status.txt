@@ -1,0 +1,27 @@
+START 2026-06-17T18:39:58+08:00
+RUN ml10m_longtail_ngcf 2026-06-17T18:39:58+08:00
+DONE ml10m_longtail_ngcf rc=0 2026-06-17T18:55:26+08:00
+RUN ml10m_longtail_ngcfips 2026-06-17T18:55:26+08:00
+DONE ml10m_longtail_ngcfips rc=0 2026-06-17T19:13:53+08:00
+RUN ml10m_longtail_ngcfdice 2026-06-17T19:13:53+08:00
+DONE ml10m_longtail_ngcfdice rc=1 2026-06-17T19:13:58+08:00
+FAILED ml10m_longtail_ngcfdice rc=1 2026-06-17T19:13:58+08:00
+RUN ml10m_longtail_ngcfdice 2026-06-17T19:58:17+08:00
+RUN ml10m_longtail_ngcfdice 2026-06-17T21:06:30+08:00
+DONE ml10m_longtail_ngcfdice rc=0 2026-06-17T21:25:02+08:00
+RUN ml10m_uniform_ngcf 2026-06-17T21:25:02+08:00
+DONE ml10m_uniform_ngcf rc=0 2026-06-17T21:40:06+08:00
+RUN ml10m_uniform_ngcfips 2026-06-17T21:40:06+08:00
+DONE ml10m_uniform_ngcfips rc=0 2026-06-17T21:56:48+08:00
+RUN ml10m_uniform_ngcfdice 2026-06-17T21:56:48+08:00
+DONE ml10m_uniform_ngcfdice rc=1 2026-06-17T22:10:05+08:00
+FAILED ml10m_uniform_ngcfdice rc=1 2026-06-17T22:10:05+08:00
+RUN ml10m_uniform_ngcfdice 2026-06-17T22:21:42+08:00
+DONE ml10m_uniform_ngcfdice rc=0 2026-06-17T22:41:50+08:00
+RUN ml10m_head_ngcf 2026-06-17T22:41:50+08:00
+DONE ml10m_head_ngcf rc=0 2026-06-17T22:57:40+08:00
+RUN ml10m_head_ngcfips 2026-06-17T22:57:40+08:00
+DONE ml10m_head_ngcfips rc=0 2026-06-17T23:14:13+08:00
+RUN ml10m_head_ngcfdice 2026-06-17T23:14:13+08:00
+DONE ml10m_head_ngcfdice rc=0 2026-06-17T23:34:07+08:00
+ALL_DONE 2026-06-17T23:34:07+08:00

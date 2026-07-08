@@ -1,0 +1,20 @@
+START 2026-06-18T13:12:22+08:00
+RUN ml10m_longtail_vae 2026-06-18T13:12:22+08:00
+DONE ml10m_longtail_vae rc=0 2026-06-18T13:25:24+08:00
+RUN ml10m_longtail_vaeips 2026-06-18T13:25:24+08:00
+DONE ml10m_longtail_vaeips rc=0 2026-06-18T13:39:21+08:00
+RUN ml10m_longtail_vaedice 2026-06-18T13:39:21+08:00
+DONE ml10m_longtail_vaedice rc=0 2026-06-18T14:32:34+08:00
+RUN ml10m_uniform_vae 2026-06-18T14:32:34+08:00
+DONE ml10m_uniform_vae rc=0 2026-06-18T14:46:03+08:00
+RUN ml10m_uniform_vaeips 2026-06-18T14:46:03+08:00
+DONE ml10m_uniform_vaeips rc=0 2026-06-18T15:00:16+08:00
+RUN ml10m_uniform_vaedice 2026-06-18T15:00:16+08:00
+DONE ml10m_uniform_vaedice rc=0 2026-06-18T15:54:21+08:00
+RUN ml10m_head_vae 2026-06-18T15:54:21+08:00
+DONE ml10m_head_vae rc=0 2026-06-18T16:07:47+08:00
+RUN ml10m_head_vaeips 2026-06-18T16:07:47+08:00
+DONE ml10m_head_vaeips rc=0 2026-06-18T16:21:31+08:00
+RUN ml10m_head_vaedice 2026-06-18T16:21:31+08:00
+RUN_RESUME ml10m_head_vaedice \2026-06-18T18:06:23+08:00
+DONE_RESUME ml10m_head_vaedice rc=0 \2026-06-18T18:06:23+08:00

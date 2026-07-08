@@ -1,0 +1,65 @@
+论文代码复现
+1.论文基本信息：
+ 题目：Disentangling User Interest and Conformity for Recommendation with
+Causal Embedding
+ 发表时间及期刊：WWW, 2021
+ 研究问题：考虑去除流行度偏差的物品推荐
+ 研究方法：给定用户与物品之间的交互数据以及物品的流行度信息，本文
+提出了一种基于因果嵌入表示的推荐模型，分别建模顾客的内在兴趣
+（interest）和对于流行物品的从众行为（conformity）, 并设计一种新的成
+对学习的目标函数来解耦上述两种因素。
+ 论文地址：https://dl.acm.org/doi/10.1145/3442381.3449788
+ 代码框架：Pytorch
+ 已有代码：该研究方法对应的所有.py文件，数据文件（train、valid、test）
+以及在两个数据集上最优的参数配置文件，直接运行可以得到该模型的结
+果；同时也包括了本研究中所涉及到的所有 benchmarks 的代码。
+ 代码地址：https://github.com/tsinghua-fib-lab/DICE
+ 完整索引：Yu Zheng, Chen Gao, Xiang Li, Xiangnan He, Yong Li, and Depeng
+Jin. 2021. Disentangling User Interest and Conformity for Recommendation with
+Causal Embedding. In Proceedings of the Web Conference 2021 (WWW '21).
+Association for Computing Machinery, New York, NY, USA, 2980–2991.
+https://doi.org/10.1145/3442381.3449788
+ 选择理由：首先，本文属于推荐系统中去偏与解耦学习结合的经典论文。
+本文去偏方法设计的主要思想非常直观却很巧妙，易于读者理解并且激发
+兴趣。其次，本文提供的代码完整且规范，没有特别复杂的深度学习模
+型，主要都是推荐系统中一些经典且常用的模块，例如 BPR 损失函数的构
+建和矩阵分解等课程涉及到的模块，对于初学者比较友好。
+2.复现要求
+ 一星：复现该论文方法（DICE）在一个或两个数据集上的指标表现
+ 实现步骤：Github 上下载对应代码，根据 Readme文件中的提示可以直
+接运行得到结果
+ 难点：①需要在配置文件 app.py 以及 const.py 中修改路径信息，否则会
+报错；②该代码整体基于 visdom可视化工具包进行模型训练过程以及
+结果的可视化，需要事先下载安装相关工具包并熟悉 visdom的使用流
+程。
+ 两星：复现论文中 benchmarks 的实验结果, 4.3.1中对于 interest和
+conformity embedding 的可视化结果以及 4.4.3中对于 Curriculum Learning 的
+灵敏度分析。
+ 实现步骤：这些部分的代码都有提供，但是实现过程中需要修改模型中
+对应参数。benchmarks 中实现了 IPS 去偏方法的四种形式，需要调整
+app.py 文件中'weighting_mode'和'weighting_smoothness'来实现。可视化
+结果需要调用 viz.py 和embedding_viz.m实现。Curriculum Learning 的
+灵敏度分析需要同时调整'adaptive'，'int_weight'和'pop_weight'参数。
+ 难点：需要基本理解 benchmarks（尤其是 4中IPS 变体）的区别以及
+Curriculum Learning 的基本原理，从而能够找到对应的参数进行修改。
+ 三星：复现4.3.2和 4.5中调整测试集和训练集构造策略后的实验结果。
+ 实现步骤：本文的数据预处理代码没有直接给出，但给出了参考的预处
+理实现代码链接 https://github.com/DavyMorgan/dps。需要重新调整代码
+的输入和输出，并根据论文实验中的要求调整相关参数。
+ 难点：参考代码的数据集与本文使用的数据集不一致，需要重新匹配数
+据集并生成与本文论文框架相同的格式。除此之外，还需要了解无偏数
+据集构造的基本思路，从而找到相应的参数进行修改。
+ 四星：将本文中基础模型（即矩阵分解和 lightGCN）更换成其他推荐模型,
+如NeuMF (Neural Collaborative Filtering), NGCF(Neural Graph Collaborative
+Filtering), VAE等，并探究本文提出的去偏方法是否在这些模型中同样有
+效。
+ 五星：将本文解耦学习的思路应用到其他推荐场景中，用于解决其他的偏
+差或解耦不同的效应，例如：
+ Wenhui Meng, Jiayi Xie, Jing Yi, Yaochen Zhu, and Zhenzhong Chen. 2025.
+Disentangling User Interest and Geographical Context for POI
+Recommendations. ACM Trans. Intell. Syst. Technol. Just Accepted (March
+2025). https://doi.org/10.1145/3723008 解耦POI 推荐中顾客的兴趣和地
+理位置的影响。
+ 除了流行度偏差外，社交影响（social influence）也是影响用户交互行
+为的重要原因，因此可以进一步探究应用本方法来同时考虑解耦用户内
+在兴趣、从众行为和社交影响对于用户交互行为的影响。

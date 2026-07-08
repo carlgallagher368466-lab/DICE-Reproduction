@@ -1,0 +1,11 @@
+{
+  "status": "START 2026-06-17T10:31:43+08:00\nRUN ml10m_longtail_neumfdice_no_dis 2026-06-17T10:31:43+08:00\nDONE ml10m_longtail_neumfdice_no_dis rc=0 2026-06-17T10:49:37+08:00\nRUN ml10m_longtail_neumfdice_no_adaptive 2026-06-17T10:49:37+08:00\nDONE ml10m_longtail_neumfdice_no_adaptive rc=0 2026-06-17T11:12:29+08:00\nRUN ml10m_longtail_neumfdice_low_dis 2026-06-17T11:12:29+08:00\nDONE ml10m_longtail_neumfdice_low_dis rc=0 2026-06-17T11:30:02+08:00\nRUN ml10m_longtail_neumfdice_high_dis 2026-06-17T11:30:02+08:00\nDONE ml10m_longtail_neumfdice_high_dis rc=0 2026-06-17T11:48:48+08:00\nALL_DONE 2026-06-17T11:48:48+08:00\n",
+  "best_recall20_variant": "no-dis",
+  "best_recall20": 0.1583423334146322,
+  "worst_recall20_variant": "high-dis",
+  "worst_recall20": 0.14268583415504282,
+  "lowest_avgpop20_variant": "low-dis",
+  "lowest_avgpop20": 982.36767578125,
+  "highest_longtail_ratio20_variant": "no-adaptive",
+  "highest_longtail_ratio20": 0.003740234375
+}

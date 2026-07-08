@@ -1,0 +1,10 @@
+START 2026-06-17T10:31:43+08:00
+RUN ml10m_longtail_neumfdice_no_dis 2026-06-17T10:31:43+08:00
+DONE ml10m_longtail_neumfdice_no_dis rc=0 2026-06-17T10:49:37+08:00
+RUN ml10m_longtail_neumfdice_no_adaptive 2026-06-17T10:49:37+08:00
+DONE ml10m_longtail_neumfdice_no_adaptive rc=0 2026-06-17T11:12:29+08:00
+RUN ml10m_longtail_neumfdice_low_dis 2026-06-17T11:12:29+08:00
+DONE ml10m_longtail_neumfdice_low_dis rc=0 2026-06-17T11:30:02+08:00
+RUN ml10m_longtail_neumfdice_high_dis 2026-06-17T11:30:02+08:00
+DONE ml10m_longtail_neumfdice_high_dis rc=0 2026-06-17T11:48:48+08:00
+ALL_DONE 2026-06-17T11:48:48+08:00

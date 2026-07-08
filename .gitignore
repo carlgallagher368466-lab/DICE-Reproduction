@@ -1,0 +1,30 @@
+﻿# Python / test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+__MACOSX/
+._*
+
+# Runtime outputs and checkpoints
+DICE/runs/
+runs/
+output/
+ckpt/
+*.pth
+*.pt
+*.ckpt
+*.pid
+nohup.out
+
+# Large raw archives that should be uploaded as Releases or downloaded from source
+*.rar
+*.tar.gz
+remote_archives/
+
+# Local IDE files
+.vscode/
+.idea/
